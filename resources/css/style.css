@@ -1,0 +1,16 @@
+/* Font Set & Box Sizing */
+
+html {
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/* Universal Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
