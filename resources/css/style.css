@@ -1,4 +1,4 @@
-/* Font Set & Box Sizing */
+/* === Font Set & Box Sizing === */
 
 html {
   font-size: 16px;
@@ -8,9 +8,51 @@ html {
 }
 
 
-/* Universal Styles */
+/* === Universal Styles === */
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.4;
 }
+
+header,
+footer {
+  padding: 1rem 1.5rem;
+}
+
+.container {
+  padding: 2rem 1.5rem;
+}
+
+.media {
+  width: 60%;
+}
+
+.sidebar {
+  width: 40%;
+}
+
+.preview img {
+  width: 35%;
+  height: auto;
+  padding: 1rem 1rem;
+}
+
+.preview-info {
+  width: 65%;
+}
+
+.preview-info h6 {
+  margin: .5rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+
+/* === Header === */
