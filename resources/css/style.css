@@ -11,31 +11,53 @@ html {
 /* === Universal Styles === */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.4;
 }
 
 header,
 footer {
+  height: 4rem;
   padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
 }
 
 .container {
-  padding: 2rem 1.5rem;
+  margin: 2rem 1.5rem;
+  max-width: 60%;
+}
+
+.container p {
+  max-width: 60%;
 }
 
 .media {
-  width: 60%;
+  max-width: 100%;
+  height: auto;
 }
 
 .sidebar {
   width: 40%;
 }
 
-.preview img {
+.preview {
+  display: flex;
+}
+
+.image-container {
   width: 35%;
   height: auto;
   padding: 1rem 1rem;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 .preview-info {
@@ -56,3 +78,64 @@ h3 {
 
 
 /* === Header === */
+
+header {
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.logo-container em {
+  color: grey;
+  font-weight: lighter;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.sign-in-container span {
+  margin-left: 1rem;
+}
+
+
+/* === Company Banner === */
+
+.banner {
+  background-color: lightgray;
+}
+
+.banner .sidebar {
+  display: flex;
+}
+
+.sidebar-content {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar-content h1 {
+  font-weight: bold;
+  color: #454545;
+}
+
+h4 {
+  max-width: 80%;
+  color: #454545;
+  margin: 1rem 0;
+}
+
+.sidebar-content h6 {
+  background: #454545;
+  color: white;
+  text-align: center;
+  max-width: 70%;
+  padding: .5rem;
+  font-weight: lighter;
+}
