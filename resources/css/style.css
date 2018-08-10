@@ -100,6 +100,10 @@ a {
   font-size: .8rem;
 }
 
+span {
+  font-size: .8rem;
+}
+
 /* === Header === */
 
 header {
@@ -190,4 +194,38 @@ h4 {
 
 .mobile-image {
   display: none;
+}
+
+
+/* === Courses Section === */
+
+.start-learning {
+  padding: 2rem 4.5rem;
+  background-color: lightgray;
+}
+
+.start-learning h1 {
+  text-align: center;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.course {
+  max-width: 25%;
+  background-color: white;
+  margin: 1rem;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+.course-info {
+  padding: 1rem 0 1.5rem 1rem;
 }
