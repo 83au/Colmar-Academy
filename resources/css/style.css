@@ -135,8 +135,28 @@ header {
 }
 .sign-in-container span {
   margin-left: 1rem;
+  font-weight: 400;
 }
 
+@media only screen and (max-width: 700px) {
+  .sign-in-container {
+    display: none;
+  }
+
+  .logo-container h2 {
+    display: none;
+  }
+
+  .logo-container {
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .mobile-nav {
+    display: inline-block;
+  }
+}
 
 /* === Main Content === */
 
@@ -151,7 +171,7 @@ main {
   background-color: lightgray;
 }
 
-.banner .sidebar {
+.sidebar {
   display: flex;
 }
 
@@ -169,16 +189,50 @@ h4 {
   margin: 1rem 0;
 }
 
-.sidebar-content h6 {
+.button {
   background: #454545;
   color: white;
   text-align: center;
-  max-width: 87%;
+  max-width: 80%;
   padding: .5rem;
   font-weight: lighter;
 }
 
+@media only screen and (max-width: 700px) {
+  .banner {
+    flex-direction: column;
+  }
 
+  .feature-container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .sidebar {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .sidebar-content {
+    padding: 2rem 1rem;
+  }
+
+  .sidebar-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .sidebar-content h4 {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    background: #848485;
+    max-width: 100%;
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+}
 /* === Info === */
 
 .feature-container h1 {
