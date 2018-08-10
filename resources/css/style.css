@@ -265,6 +265,52 @@ h4 {
   display: none;
 }
 
+@media only screen and (max-width: 700px) {
+  .info-feature {
+    display: none;
+  }
+
+  .preview {
+    flex-direction: column;
+    padding: 1rem 1rem 2rem 1rem;
+    align-items: center;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .preview .image-container {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .learn-previews .preview:last-child {
+    background-color: white;
+  }
+
+  .learn-previews .preview {
+    border-top: none;
+  }
+}
 
 /* === Courses Section === */
 
