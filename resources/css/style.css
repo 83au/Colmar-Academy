@@ -17,7 +17,7 @@ body {
 
 header,
 footer {
-  height: 4rem;
+  height: 2rem;
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -108,6 +108,11 @@ span {
 
 header {
   align-items: center;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  background: white;
 }
 
 .logo-container {
@@ -125,10 +130,20 @@ header {
   display: none;
 }
 
+.sign-in-container {
+  margin-right: 2rem;
+}
 .sign-in-container span {
   margin-left: 1rem;
 }
 
+
+/* === Main Content === */
+
+main {
+  position: relative;
+  top: 4rem;
+}
 
 /* === Company Banner === */
 
@@ -251,4 +266,6 @@ h4 {
 
 footer {
   border-top: 1px solid lightgray;
+  position: relative;
+  top: 4rem;
 }
