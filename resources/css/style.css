@@ -345,6 +345,45 @@ h4 {
   padding: 1rem 0 1.5rem 1rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .start-learning {
+    padding: 2rem 1rem;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .start-learning h1 {
+    font-size: 2.5rem;
+  }
+
+  .courses {
+    margin-top: 1rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .course {
+    max-width: 100%;
+    background-color: lightgray;
+    display: flex;
+    align-content: center;
+    padding: 1rem 0 1.5rem 1rem;
+    margin: .5rem;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course-info h6,
+  .course-info span {
+    display: none;
+  }
+
+  .course-info h3 {
+    font-size: 1.9rem;
+  }
+}
 
 /* === Thesis Section === */
 
