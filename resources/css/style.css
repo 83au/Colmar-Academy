@@ -28,7 +28,7 @@ footer {
 }
 
 .feature-container {
-  margin: 2rem 1.5rem;
+  padding: 2rem 3rem 2rem 1.5rem;
   max-width: 60%;
 }
 
@@ -70,7 +70,7 @@ h4,
 h6,
 span,
 p {
-  color: #454545;
+  color: #594E39;
 }
 
 h6,
@@ -81,12 +81,14 @@ a {
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -96,8 +98,9 @@ h6 {
 
 a {
   text-decoration: none;
-  color: #4295FF;
   font-size: .8rem;
+  transition-duration: 400ms;
+  color: white;
 }
 
 span {
@@ -118,28 +121,47 @@ header {
 .logo-container {
   display: flex;
   align-items: center;
-  height: 2rem;
+  height: 2.3rem;
 }
 
-.logo-container em {
-  color: grey;
+.logo-container h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo-container h2 em {
   font-weight: lighter;
+  color: gray;
+}
+
+.logo-container img {
+  height: 100%;
+  width: auto;
 }
 
 .mobile-nav {
   display: none;
 }
 
-.sign-in-container {
-  margin-right: 2rem;
+nav {
+  margin-right: 4rem;
 }
-.sign-in-container span {
+
+nav span a {
   margin-left: 1rem;
+  font-size: 1rem;
   font-weight: 400;
+  color: #594E39;
+  transition-duration: 300ms;
+}
+
+nav span a:hover {
+  font-size: 1.1rem;
+  border-bottom: 1px solid #344531;
 }
 
 @media only screen and (max-width: 700px) {
-  .sign-in-container {
+  nav {
     display: none;
   }
 
@@ -179,6 +201,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 85%;
 }
 
 .sidebar-content h1 {
@@ -189,13 +212,21 @@ h4 {
   margin: 1rem 0;
 }
 
-.button {
-  background: #454545;
+a .button {
+  background: #344531;
   color: white;
+  letter-spacing: .12em;
   text-align: center;
   max-width: 80%;
   padding: .5rem;
   font-weight: lighter;
+  transition: all 500ms;
+}
+
+a .button:hover {
+  box-shadow: 5px 5px 4px #2B2B2B;
+  font-size: 1rem;
+  background: #557050;
 }
 
 @media only screen and (max-width: 700px) {
@@ -205,7 +236,7 @@ h4 {
 
   .feature-container {
     max-width: 100%;
-    margin: 0;
+    padding: 0;
   }
 
   .sidebar {
@@ -226,11 +257,16 @@ h4 {
     font-size: 1.5rem;
   }
 
-  .button {
-    background: #848485;
+  a .button {
+    background: #557050;
     max-width: 100%;
     font-weight: normal;
     font-size: 1.2rem;
+    box-shadow: 5px 5px 4px #2B2B2B;
+  }
+
+  a .button:hover {
+    font-size: 1.5rem;
   }
 }
 /* === Info === */
@@ -251,7 +287,11 @@ h4 {
   border-top: 1px solid lightgray;
 }
 
-.learn-previews .preview:last-child {
+.preview {
+  transition: background-color 500ms;
+}
+
+.preview:hover {
   background-color: lightgray;
 }
 
@@ -259,6 +299,15 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.preview-info a {
+  color: #4295FF;
+}
+
+.preview-info a:hover {
+  font-size: 1rem;
+  color: #4200FF;
 }
 
 .mobile-image {
@@ -290,6 +339,10 @@ h4 {
     width: 100%;
   }
 
+  .preview .image-container img {
+    box-shadow: 5px 5px 4px #2B2B2B;
+  }
+
   h3 {
     font-size: 1.7rem;
   }
@@ -301,10 +354,6 @@ h4 {
   a {
     font-size: 1rem;
     font-weight: normal;
-  }
-
-  .learn-previews .preview:last-child {
-    background-color: white;
   }
 
   .learn-previews .preview {
@@ -321,6 +370,7 @@ h4 {
 
 .start-learning h1 {
   text-align: center;
+  font-size: 2.2rem;
 }
 
 .courses {
@@ -334,6 +384,12 @@ h4 {
   max-width: 25%;
   background-color: white;
   margin: 1rem;
+  transition: box-shadow 1s;
+}
+
+.course:hover {
+  opacity: 0.8;
+  box-shadow: 2px 5px 4px #2B2B2B;
 }
 
 .course img {
@@ -369,6 +425,7 @@ h4 {
     align-content: center;
     padding: 1rem 0 1.5rem 1rem;
     margin: .5rem;
+    box-shadow: 2px 5px 4px #2B2B2B;
   }
 
   .course img {
@@ -394,10 +451,6 @@ h4 {
 
 .feature-container h3 {
   margin: 1.5rem 0 .5rem 0;
-}
-
-.thesis-sidebar .preview:first-child {
-  background: lightgray;
 }
 
 @media only screen and (max-width: 700px) {
@@ -429,6 +482,28 @@ footer {
   border-top: 1px solid lightgray;
   position: relative;
   top: 4rem;
+  background: #344531;
+}
+
+.social {
+  color: white;
+}
+
+i {
+  margin: 0 1rem;
+}
+
+i:hover {
+  opacity: .8;
+}
+
+.copy,
+.terms-privacy span {
+  color: white;
+}
+
+.terms-privacy span:hover {
+  opacity: .8;
 }
 
 @media only screen and (max-width: 700px) {
