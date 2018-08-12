@@ -388,12 +388,12 @@ a .button:hover {
   max-width: 25%;
   background-color: white;
   margin: 1rem;
-  transition: box-shadow 1s;
+  transition: box-shadow 400ms;
 }
 
 .course:hover {
   opacity: 0.8;
-  box-shadow: 2px 5px 4px #2B2B2B;
+  box-shadow: 0 0 15px black;
 }
 
 .course img {
@@ -429,7 +429,7 @@ a .button:hover {
     align-content: center;
     padding: 1rem 0 1.5rem 1rem;
     margin: .5rem;
-    box-shadow: 2px 5px 4px #2B2B2B;
+    box-shadow: 2px 5px 10px black;
   }
 
   .course img {
