@@ -518,6 +518,7 @@ i:hover {
 @media only screen and (max-width: 750px) {
   footer {
     border-top: none;
+    align-items: center;
   }
 
   .desktop-i {
@@ -538,7 +539,7 @@ i:hover {
 
   .copy {
     font-weight: normal;
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
   .terms-privacy {
