@@ -170,9 +170,13 @@ nav span a:hover {
   }
 
   .logo-container {
-    margin-left: 0;
     width: 100%;
     justify-content: space-around;
+  }
+
+  header {
+    padding: 1rem 0;
+    align-content: center;
   }
 
   .mobile-nav {
@@ -531,7 +535,7 @@ i:hover {
   .social {
     margin-right: 0;
   }
-  
+
   .copy {
     font-weight: normal;
     font-size: 1rem;
