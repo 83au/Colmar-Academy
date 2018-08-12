@@ -297,12 +297,13 @@ a .button:hover {
   margin-top: 2rem;
 }
 
-.learn-previews {
-  border: 1px solid #D3BA79;
-}
-
 .learn-previews .preview {
   border-top: 1px solid #D3BA79;
+  border-left: 1px solid rgba(211, 186, 121, .5);
+}
+
+.learn-previews .preview:last-child {
+  border-bottom: 1px solid rgba(211, 186, 121, .5);
 }
 
 .preview-info {
