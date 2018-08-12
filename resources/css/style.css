@@ -160,7 +160,7 @@ nav span a:hover {
   border-bottom: 1px solid #344531;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   nav {
     display: none;
   }
@@ -229,7 +229,7 @@ a .button:hover {
   background: #557050;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .banner {
     flex-direction: column;
   }
@@ -314,7 +314,7 @@ a .button:hover {
   display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .info-feature {
     display: none;
   }
@@ -401,7 +401,7 @@ a .button:hover {
   padding: 1rem 0 1.5rem 1rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .start-learning {
     padding: 2rem 1rem;
     background-color: white;
@@ -453,7 +453,7 @@ a .button:hover {
   margin: 1.5rem 0 .5rem 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .thesis {
     padding: 2rem 0 1.5rem 0;
   }
@@ -498,6 +498,10 @@ i:hover {
   opacity: .8;
 }
 
+.mobile-i {
+  display: none;
+}
+
 .copy,
 .terms-privacy span {
   color: white;
@@ -507,11 +511,27 @@ i:hover {
   opacity: .8;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   footer {
     border-top: none;
   }
 
+  .desktop-i {
+    display: none;
+  }
+
+  .mobile-i {
+    display: inline-block;
+  }
+
+  i {
+    margin: .5rem;
+  }
+
+  .social {
+    margin-right: 0;
+  }
+  
   .copy {
     font-weight: normal;
     font-size: 1rem;
