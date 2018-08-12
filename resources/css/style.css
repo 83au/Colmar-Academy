@@ -41,6 +41,10 @@ footer {
   width: 40%;
 }
 
+.banner-courses {
+  background-color: #D3BA79;
+}
+
 .preview {
   display: flex;
 }
@@ -54,6 +58,14 @@ footer {
 .image-container img {
   max-width: 100%;
   height: auto;
+}
+
+.preview {
+  transition: background-color 500ms;
+}
+
+.preview:hover {
+  background-color: #D3BA79;
 }
 
 .preview-info {
@@ -81,7 +93,7 @@ a {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
@@ -107,6 +119,7 @@ span {
   font-size: .8rem;
 }
 
+
 /* === Header === */
 
 header {
@@ -115,7 +128,7 @@ header {
   z-index: 10;
   top: 0;
   width: 100%;
-  background: white;
+  background: #E1E3E5;
 }
 
 .logo-container {
@@ -131,7 +144,7 @@ header {
 
 .logo-container h5 em {
   font-weight: lighter;
-  color: gray;
+  color: #425066;
 }
 
 .logo-container img {
@@ -151,7 +164,7 @@ nav span a {
   margin-left: 1rem;
   font-size: 1rem;
   font-weight: 400;
-  color: #594E39;
+  color: #425066;
   transition-duration: 300ms;
 }
 
@@ -184,6 +197,7 @@ nav span a:hover {
   }
 }
 
+
 /* === Main Content === */
 
 main {
@@ -191,11 +205,8 @@ main {
   top: 4rem;
 }
 
-/* === Company Banner === */
 
-.banner {
-  background-color: lightgray;
-}
+/* === Company Banner === */
 
 .sidebar {
   display: flex;
@@ -246,6 +257,7 @@ a .button:hover {
   .sidebar {
     margin: 0 auto;
     width: 100%;
+    justify-content: center;
   }
 
   .sidebar-content {
@@ -273,6 +285,8 @@ a .button:hover {
     font-size: 1.5rem;
   }
 }
+
+
 /* === Info === */
 
 .feature-container h2 {
@@ -284,19 +298,11 @@ a .button:hover {
 }
 
 .learn-previews {
-  border: 1px solid lightgray;
+  border: 1px solid #D3BA79;
 }
 
 .learn-previews .preview {
-  border-top: 1px solid lightgray;
-}
-
-.preview {
-  transition: background-color 500ms;
-}
-
-.preview:hover {
-  background-color: lightgray;
+  border-top: 1px solid #D3BA79;
 }
 
 .preview-info {
@@ -365,16 +371,16 @@ a .button:hover {
   }
 }
 
+
 /* === Courses Section === */
 
 .start-learning {
   padding: 2rem 4.5rem;
-  background-color: lightgray;
 }
 
 .start-learning h2 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
 }
 
 .courses {
@@ -403,6 +409,10 @@ a .button:hover {
 
 .course-info {
   padding: 1rem 0 1.5rem 1rem;
+}
+
+.course-info h6 {
+  margin: .5rem 0;
 }
 
 @media only screen and (max-width: 750px) {
@@ -446,11 +456,13 @@ a .button:hover {
   }
 }
 
+
 /* === Thesis Section === */
 
 .thesis h2 {
   text-align: center;
   margin-top: 2rem;
+  font-size: 2.8rem;
 }
 
 .feature-container h3 {
@@ -480,6 +492,8 @@ a .button:hover {
     display: none;
   }
 }
+
+
 /* === Footer === */
 
 footer {
