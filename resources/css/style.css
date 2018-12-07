@@ -160,17 +160,31 @@ nav {
   margin-right: 4rem;
 }
 
+nav span {
+  position: relative;
+}
+
 nav span a {
-  margin-left: 1rem;
+  margin: 0 .5rem;
   font-size: 1rem;
   font-weight: 400;
   color: #425066;
-  transition-duration: 300ms;
 }
 
-nav span a:hover {
-  font-size: 1.1rem;
-  border-bottom: 1px solid #344531;
+nav span a::after {
+  width: 0;
+  height: 1px;
+  background: #344531;
+  display: block;
+  content: '';
+  position: absolute;
+  left: 50%;
+  transition: left .3s, width .3s
+}
+
+nav span a:hover::after {
+  width: 90%;
+  left: .35rem;
 }
 
 @media only screen and (max-width: 750px) {
